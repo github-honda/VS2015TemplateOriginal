@@ -170,10 +170,6 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="App_Data\aspnet-WebAuth1-20190215111250.mdf" />
-    <Content Include="App_Data\aspnet-WebAuth1-20190215111250_log.ldf">
-      <DependentUpon>aspnet-WebAuth1-20190215111250.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Data\TestFile1.txt" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />

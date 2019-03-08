@@ -1,0 +1,175 @@
+<!-- 
+20190305, Honda, WebAuth1. 
+-->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics - svc.011.idv.tw -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125026365-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125026365-2');
+</script>
+
+	<title>Website template of ASP.Net Web Forms Individual User Account</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+    <style type="text/css">
+        body {
+            font-family: "DFKai-sb","MingLiU","Microsoft JhengHei";
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<h3>Website template ASP.Net Web Forms Individual User Account</h3>
+	<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+<ul class="navbar-nav mr-auto">
+	<li class="nav-item">&nbsp;</li>
+</ul>
+<div class="text-right">
+<a href="http://www.011.idv.tw">011</a>
+</div>
+        </div>
+    </nav>
+
+
+<div class="container-fluid">
+
+        <div>
+            <span>From:</span>
+            <span>hondachen@hotmail.com</span>
+        </div>
+        <div>
+            <span>Date:</span>
+            <span>2019-03-05</span>
+        </div>
+
+        <div>
+            <span>Subject:</span>
+            <span>Website template of ASP.Net Web Forms Individual User Account</span>
+        </div>
+        <br />
+
+以 Visual studio 2015, Update 3, 選擇 ASP.NET 4.6 Templates: Web Forms, Authentication: Individual User Account 樣式建立.
+<br />
+範例程式可自<a href="https://github.com/github-honda/VS2015TemplateOriginal">VS2015TemplateOriginal</a>取得.
+<br /><br />
+目錄:
+<ol>
+	<li><a href="#1">主要步驟</a></li>
+	<li><a href="#2">資料庫</a></li>
+	<li><a href="#3">測試畫面</a></li>
+</ol>
+
+
+
+
+<h1><a name="1">主要步驟</a></h1>
+
+
+1. 建立新專案 WebAuth1, Templates=Web, ASP.NET Web Application (.NET Framework).
+<br />
+<img src="0005-NewProject.jpg" class="img-fluid" alt="NewProject">
+
+<br><br>
+
+2. Template 選擇 Web Forms, Authentication: Individual User Accounts.
+<br />
+<img src="0010-SelectTemplate.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+<h1><a name="2">資料庫</a></h1>
+將網站專案編譯成功後, 經由 Entity Framework CodeFirst 的功能 可以在網站會員註冊畫面登記新帳號後, 自動在 App_Data\ 目錄中建立 MSSQLLocalDB 資料庫檔案 .MDF 及 .LDF 如下例 :
+<br />
+<img src="020010-MDF.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+檢視 Web.config 檔案, 可以查到自動建立的 MSSQLLocalDB 資料庫連線字串設定如下:
+<br />
+    &lt;add name="DefaultConnection" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebBase1Auth-20180924123716.mdf;Initial Catalog=aspnet-WebBase1Auth-20180924123716;Integrated Security=True" providerName="System.Data.SqlClient" /&gt;
+
+<br />
+<br />
+資料庫中, 主要存放 Table 如下:
+<br />
+完整的資料庫 SQL Script 可參考<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020040-AspNetScript-Original.sql">020040-AspNetScript-Original.sql</a>.
+或參考範例 <a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020040-AspNetScriptCustom.sql">建立資料庫 AspNetDB1</a> .
+<br />
+<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020030-AspNetRoles.txt">AspNetRoles</a>
+<br />
+<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020030-AspNetUserClaims.txt">AspNetUserClaims</a>
+<br />
+<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020030-AspNetUserLogins.txt">AspNetUserLogins</a>
+<br />
+<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020030-AspNetUserRoles.txt">AspNetUserRoles</a>
+<br />
+<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/020030-AspNetUsers.txt">AspNetUsers</a>
+<br />
+<a href="https://github.com/github-honda/VS2015TemplateOriginal/blob/master/doc/Template/WebAuth1/Table__MigrationHistory.jpg">_MigrationHistory</a> (Entity Framework 控制需要的檔案)
+<br />
+
+<br />
+自動建立的網站專案, 會利用 Entity Framework CodeFirst 功能, 檢查table _MigrationHistory, 當資料庫已經存在時, 就不會再產生新的資料庫檔案. 
+若需要將資料庫移植到 SQL Server, 可參考以上SQL Script, 移植到 SQL server 後, 再將連線字串改成如下:
+<br />
+    &lt;add name="DefaultConnection" connectionString="Data Source=127.0.01;Initial Catalog=DBAspNet1;Integrated Security=True" providerName="System.Data.SqlClient" /&gt;
+<br />
+
+<br />
+ERD 如下:
+<br />
+<img src="020040-ERD-Original.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+
+<h1><a name="3">測試畫面</a></h1>
+
+會員註冊:
+<br />
+<img src="010020-Register.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+登入成功:
+<br />
+<img src="010030-LoginSuccess.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+會員變更基本資料:
+<br />
+<img src="010040-ManageAccount.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+會員登入:
+<br />
+<img src="010050-Login.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+會員變更密碼:
+<br />
+<img src="010060-ManagePassword.jpg" class="img-fluid" alt="alt">
+<br><br>
+
+
+<div class="text-right">
+<a href="/CodeHelper/cs/index.html">C# CodeHelper</a> |
+<a href="http://www.011.idv.tw">011</a>
+</div>
+
+</div>
+</body>
+
+</html>

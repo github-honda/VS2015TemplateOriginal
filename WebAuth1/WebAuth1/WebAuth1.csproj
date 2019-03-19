@@ -170,6 +170,13 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="App_Data\020030-AspNetRoles.txt" />
+    <Content Include="App_Data\020030-AspNetUserClaims.txt" />
+    <Content Include="App_Data\020030-AspNetUserLogins.txt" />
+    <Content Include="App_Data\020030-AspNetUserRoles.txt" />
+    <Content Include="App_Data\020030-AspNetUsers.txt" />
+    <Content Include="App_Data\020040-AspNetScript-Original.sql" />
+    <Content Include="App_Data\020040-AspNetScriptCustom.sql" />
     <Content Include="App_Data\TestFile1.txt" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />

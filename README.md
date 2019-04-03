@@ -10,6 +10,10 @@ http://svc.011.idv.tw/CodeHelper/cs/vs2015/IDEOriginal/WebAuth1/doc/Readme-WebAu
 
 ## MvcAuth1
 MVC with authentication = Individual User Accounts.
+
+## MvcAuthApi1
+MVC with authentication = Individual User Accounts,
+Add folders and code references for = MVC + Web API.
   
 ## MvcWeb1
 MVC with no authentication.

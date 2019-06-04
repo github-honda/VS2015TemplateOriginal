@@ -1,28 +1,27 @@
-# Visual studio 2015 project templates original
+# Original Visual studio 2015 project templates
 
-## WebForm1 
-WebForms with no authentication.
-http://svc.011.idv.tw/CodeHelper/cs/vs2015/IDEOriginal/WebAuth1/doc/Readme-WebFormsTemplateIsMissing.html
+## Solution Console1
+Console Application.
 
-## WebAuth1 
+## Solution MvcAuth1
+MVC with authentication = Individual User Accounts.
+
+## Solution MvcAuthApi1
+MVC with authentication = Individual User Accounts,
+Add folders and code references for = MVC + Web API.
+
+## Solution MvcWeb1
+MVC with no authentication.
+
+## Solution WebAuth1 
 WebForms with authentication = Individual User Accounts.
 http://svc.011.idv.tw/CodeHelper/cs/vs2015/IDEOriginal/WebAuth1/doc/Readme-WebAuth1.html
 
-## MvcAuth1
-MVC with authentication = Individual User Accounts.
+## Solution WebForm1 
+WebForms with no authentication.
 
-## MvcAuthApi1
-MVC with authentication = Individual User Accounts,
-Add folders and code references for = MVC + Web API.
-  
-## MvcWeb1
-MVC with no authentication.
-
-## WinForms1
+## Solution WinForms1
 Windows Forms Application.
 
-## Console1
-Console Application.
-
-## WinService1
+## Solution WinService1
 Windows Service

@@ -4,16 +4,16 @@
 Template = Console Application.
 
 ## Solution MvcAuth1
-Template = MVC with authentication Individual User Accounts.
+Template = MVC with authentication Individual User Account.
 
 ## Solution MvcAuthApi1
-Template = MVC with authentication Individual User Accounts, Add folders and code references MVC + Web API.
+Template = MVC with authentication Individual User Account, Add folders and code references MVC + Web API.
 
 ## Solution MvcWeb1
 Template = MVC with no authentication.
 
 ## Solution WebAuth1 
-Template = Web Forms with authentication Individual User Accounts.
+Template = Web Forms with authentication Individual User Account.
 http://svc.011.idv.tw/CodeHelper/cs/vs2015/IDEOriginal/WebAuth1/doc/Readme-WebAuth1.html
 
 ## Solution WebForm1 

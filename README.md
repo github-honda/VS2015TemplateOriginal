@@ -1,27 +1,26 @@
 # Original Visual studio 2015 project templates
 
 ## Solution Console1
-Console Application.
+Template = Console Application.
 
 ## Solution MvcAuth1
-MVC with authentication = Individual User Accounts.
+Template = MVC with authentication Individual User Accounts.
 
 ## Solution MvcAuthApi1
-MVC with authentication = Individual User Accounts,
-Add folders and code references for = MVC + Web API.
+Template = MVC with authentication Individual User Accounts, Add folders and code references MVC + Web API.
 
 ## Solution MvcWeb1
-MVC with no authentication.
+Template = MVC with no authentication.
 
 ## Solution WebAuth1 
-WebForms with authentication = Individual User Accounts.
+Template = Web Forms with authentication Individual User Accounts.
 http://svc.011.idv.tw/CodeHelper/cs/vs2015/IDEOriginal/WebAuth1/doc/Readme-WebAuth1.html
 
 ## Solution WebForm1 
-WebForms with no authentication.
+Template = WebForms with no authentication.
 
 ## Solution WinForms1
-Windows Forms Application.
+Template = Windows Forms Application.
 
 ## Solution WinService1
-Windows Service
+Template = Windows Service
